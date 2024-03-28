@@ -11,11 +11,23 @@
     <header></header>
     <main id="game-content">
         <container class="menu">            
-            <h1>Welcome <br> to <br> A-mean-o-acid <br></h1>
+            <h1>
+                <span class="line">Welcome</span>
+                <br>
+                <span class="line">to</span>
+                <br>
+                <span class="line">A-mean-o-acid</span>
+              </h1>
             <input id="name" placeholder="Please enter your name" type="text">
         </container>
     </main>
     <footer></footer>
     <script src="game.js"></script>
+    <script>
+        var totalDuration = 3 + 2 + 3; 
+        setTimeout(function() {
+        document.querySelector('input').classList.add('fade-in');
+        }, totalDuration * 1000);
+    </script>
 </body>
 </html>

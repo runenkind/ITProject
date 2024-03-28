@@ -3,10 +3,11 @@
     src: url('/Font/ANDALEMO.TTF');
 }
 body{
-background-color: wheat;
-/* background-image: url('/Images/college-house-party-diverse-group-260nw-1445942390.webp'); */
+    background-color: wheat;
+    /* background-image: url('/Images/college-house-party-diverse-group-260nw-1445942390.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Andalemo, sans-serif;
 }
 h1{
     color: white;
@@ -23,10 +24,57 @@ h1{
     margin-left: 300px;
     margin-right: 300px;
     border-radius: 50px;
-    font-family: Andalemo;
+    font-family: Andalemo, sans-serif;
+}
+input {
+    opacity: 0;
+    transition: opacity 2s;
+}
+  
+.fade-in {
+    opacity: 1 !important;
 }
 #name{
     width: 27%;
     text-align: center;
-    font-family: Andalemo;
+    font-family: Andalemo, sans-serif;
+}
+
+.line {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    width: 0;
+}
+
+.line:nth-child(1) {
+    animation: typing 3s steps(7, end) 0s forwards, 
+        blink-caret .75s step-end 3s, 
+        hide-cursor 0s 3s forwards;
+}
+
+.line:nth-child(3) {
+    animation: typing 2s steps(2, end) 3s forwards, 
+        blink-caret .75s step-end 4s, 
+        hide-cursor 0s 4s forwards;
+}
+
+.line:nth-child(5) {
+    animation: typing 3s steps(12, end) 4s forwards, 
+        blink-caret .75s step-end 7s, 
+        hide-cursor 0s 7s forwards;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
+
+@keyframes hide-cursor {
+    to { border-color: transparent; }
 }
