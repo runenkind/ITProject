@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Andalemo;
+    src: url('/Font/ANDALEMO.TTF');
+}
+body{
+background-color: wheat;
+/* background-image: url('/Images/college-house-party-diverse-group-260nw-1445942390.webp'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 140px;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 50px;
+    font-family: Andalemo;
+}
+#name{
+    width: 27%;
+    text-align: center;
+    font-family: Andalemo;
+}

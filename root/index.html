@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text-Based Arcade Game</title>
+    <title>A-mean-o-acid</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <header></header>
     <main id="game-content">
-        <h1>Welcome</h1>
+        <container class="menu">            
+            <h1>Welcome <br> to <br> A-mean-o-acid <br></h1>
+            <input id="name" placeholder="Please enter your name" type="text">
+        </container>
     </main>
     <footer></footer>
     <script src="game.js"></script>
-    <script>
-        $(function(){
-            $("header").load("header.html"); 
-            $("footer").load("footer.html");
-        });
-        </script>
 </body>
 </html>
