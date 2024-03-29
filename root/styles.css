@@ -13,8 +13,21 @@ h1{
     color: white;
     text-align: center;
 }
-.menu {
+.welcomemenu {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 140px;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 50px;
+    font-family: Andalemo, sans-serif;
+}
+
+.menu {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -30,15 +43,43 @@ input {
     opacity: 0;
     transition: opacity 2s;
 }
+input[type="submit"] {
+    margin: 10px;
+}
   
 .fade-in {
     opacity: 1 !important;
 }
 #name{
-    width: 27%;
+    width: 250px;
     text-align: center;
     font-family: Andalemo, sans-serif;
 }
+#ng{
+    cursor: pointer;
+}   
+#ng:hover{
+    color: cyan;
+} 
+#settings{
+    cursor: pointer;
+}   
+#settings:hover{
+    color: cyan;
+}
+#help{
+    cursor: pointer;
+}   
+#help:hover{
+    color: cyan;
+}
+#credits{
+    cursor: pointer;
+}
+#credits:hover{
+    color: cyan;
+}
+
 
 .line {
     display: inline-block;
@@ -61,6 +102,31 @@ input {
 }
 
 .line:nth-child(5) {
+    animation: typing 3s steps(12, end) 4s forwards, 
+        blink-caret .75s step-end 7s, 
+        hide-cursor 0s 7s forwards;
+}
+.line:nth-child(6) {
+    animation: typing 3s steps(12, end) 4s forwards, 
+        blink-caret .75s step-end 7s, 
+        hide-cursor 0s 7s forwards;
+}
+.line:nth-child(8) {
+    animation: typing 3s steps(12, end) 4s forwards, 
+        blink-caret .75s step-end 7s, 
+        hide-cursor 0s 7s forwards;
+}
+.line:nth-child(10) {
+    animation: typing 3s steps(12, end) 4s forwards, 
+        blink-caret .75s step-end 7s, 
+        hide-cursor 0s 7s forwards;
+}
+.line:nth-child(12) {
+    animation: typing 3s steps(12, end) 4s forwards, 
+        blink-caret .75s step-end 7s, 
+        hide-cursor 0s 7s forwards;
+}
+.line:nth-child(14) {
     animation: typing 3s steps(12, end) 4s forwards, 
         blink-caret .75s step-end 7s, 
         hide-cursor 0s 7s forwards;

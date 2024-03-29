@@ -4,30 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-mean-o-acid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <header></header>
-    <main id="game-content">
-        <container class="menu">            
-            <h1>
-                <span class="line">Welcome</span>
-                <br>
-                <span class="line">to</span>
-                <br>
-                <span class="line">A-mean-o-acid</span>
-              </h1>
-            <input id="name" placeholder="Please enter your name" type="text">
-        </container>
+    <main>
+        <div id="welcomeNewplayer">
+            <form class="menu" id="welcomemenu">            
+                <h1>
+                    <span class="line">Welcome</span>
+                    <br>
+                    <span class="line">to</span>
+                    <br>
+                    <span class="line">A-mean-o-acid</span>
+                </h1>
+                <input autofocus id="name" placeholder="Please enter your name" type="text">
+                <input type="submit" id="submit">
+            </form>
+        </div>
+        <div id="main">
+            <form class="menu" id="mainmenu">
+                <h1>
+                    <span id="hello" class="line"></span>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <span id="coninue" class="line"></span>
+                    <br>
+                    <span id="ng" class="line"> New game</span>
+                    <br>
+                    <span id="settings" class="line" onclick="settingmenufnc()">Settings</span>
+                    <br>
+                    <span id="help" class="line" onclick="helpmenufnc()">Get help</span>
+                    <br>
+                    <span id="credits" class="line" onclick="creditsmenufnc()">Credits</span>
+                </h1>
+            </form>
+            
+        </div>
     </main>
     <footer></footer>
-    <script src="game.js"></script>
+    <!-- <script src="game.js"></script> -->
     <script>
         var totalDuration = 3 + 2 + 3; 
         setTimeout(function() {
-        document.querySelector('input').classList.add('fade-in');
+        document.querySelector('#name').classList.add('fade-in');
+        document.querySelector('#submit').classList.add('fade-in');
         }, totalDuration * 1000);
+        
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('#welcomemenu').onsubmit = () => {
+                event.preventDefault();
+                const name = document.querySelector('#name').value;
+                localStorage.setItem('name', name);
+                document.querySelector('#name').value = '';
+            };
+        });
+        window.onload = function() {
+            if (!localStorage.getItem('name')) {
+                document.querySelector('#welcomeNewplayer').style.display = 'block';
+                document.querySelector('#main').style.display = 'none';
+            } else {
+                document.querySelector('#welcomeNewplayer').style.display = 'none';
+                document.querySelector('#hello').innerHTML = 'Hello, ' + localStorage.getItem('name') + '!';
+            }
+        };
+        function settingmenufnc() {
+            document.querySelector('#mainmenu').style.display = 'none';
+            document.querySelector('#settingsmenu').style.display = 'block';
+        }
+        function helpmenufnc() {
+            document.querySelector('#mainmenu').style.display = 'none';
+            document.querySelector('#helpmenu').style.display = 'block';
+        }
+        function creditsmenufnc() {
+            document.querySelector('#mainmenu').style.display = 'none';
+            document.querySelector('#creditsmenu').style.display = 'block';
+        }
     </script>
 </body>
 </html>
