@@ -45,10 +45,10 @@ Anne carries a beer. Beer is a thing. The description is "A bottle of beer. It's
 [tried to make Anne actually give the beer to the player but didnt work. I dont really know why xD]
 Table of Anne's Replies
 Topic	Replies
-"drinks"		"[Beer]"
+"drinks"		"[beer]"
 
 To say beer:
-	if anne carries beer:
+	if Anne carries beer:
 		say "Anne says, 'Hey, want a beer?' ";
 		try Anne giving a beer to the player;
 	else:
