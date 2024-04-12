@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x5c8e0f994100" xmlns="http://www.logicalshift.org.uk/IF/Skein">
-  <generator>Inform 7</generator>
-  <activeNode nodeId="node-0x5c8e0f994100"/>
-  <item nodeId="node-0x5c8e0f994100">
-    <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1007">
+    <generator>Inform Mac Client (Inform version 1.82/6.41/10.1.2)</generator>
+    <item nodeId="node-1007">
+        <command xml:space="preserve">trial_LVL</command>
+        <result xml:space="preserve">
 
 
 
@@ -18,670 +18,437 @@ A dusty old living room. Bottles and cans are scattered across tables and the fl
 You can see Anne here.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f967a80"/>
-      <child nodeId="node-0x5c8e0f829bf0"/>
-      <child nodeId="node-0x5c8e0f452500"/>
-      <child nodeId="node-0x5c8e0f4559e0"/>
-      <child nodeId="node-0x5c8e0f9f81b0"/>
-      <child nodeId="node-0x5c8e0fa167a0"/>
-      <child nodeId="node-0x5c8e0fa30920"/>
-      <child nodeId="node-0x5c8e0fa46650"/>
-      <child nodeId="node-0x5c8e0fa4cdb0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f967a80">
-    <command xml:space="preserve">examine anne</command>
-    <result xml:space="preserve">Anne is blonde and tall. She has been your best friend since elementary school.
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1033"></child>
+            <child nodeId="node-1047"></child>
+            <child nodeId="node-1041"></child>
+            <child nodeId="node-1008"></child>
+            <child nodeId="node-1049"></child>
+            <child nodeId="node-1015"></child>
+            <child nodeId="node-1013"></child>
+            <child nodeId="node-1024"></child>
+            <child nodeId="node-1014"></child>
+        </children>
+    </item>
+    <item nodeId="node-1014">
+        <command xml:space="preserve">say drinks to anne</command>
+        <result xml:space="preserve">There is no reply.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f7f2170"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f7f2170">
-    <command xml:space="preserve">open window</command>
-    <result xml:space="preserve">Ah the cool night air!
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1024">
+        <command xml:space="preserve">say drinks to Anne</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1025"></child>
+        </children>
+    </item>
+    <item nodeId="node-1025">
+        <command xml:space="preserve">say  you have a beer to anne?</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1026"></child>
+        </children>
+    </item>
+    <item nodeId="node-1026">
+        <command xml:space="preserve">say  you have a beer to anne</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1027"></child>
+        </children>
+    </item>
+    <item nodeId="node-1027">
+        <command xml:space="preserve">say hello to anne</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1028"></child>
+        </children>
+    </item>
+    <item nodeId="node-1028">
+        <command xml:space="preserve">say beer to anne</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1029"></child>
+        </children>
+    </item>
+    <item nodeId="node-1029">
+        <command xml:space="preserve">ask anne about beer</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1030"></child>
+        </children>
+    </item>
+    <item nodeId="node-1030">
+        <command xml:space="preserve">ask for beer</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1031"></child>
+        </children>
+    </item>
+    <item nodeId="node-1031">
+        <command xml:space="preserve">veer</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1032"></child>
+        </children>
+    </item>
+    <item nodeId="node-1032">
+        <command xml:space="preserve">beer</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1013">
+        <command xml:space="preserve">say beer to anne</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1015">
+        <command xml:space="preserve">open window</command>
+        <result xml:space="preserve">Ah the cool night air!
 
 You open Window.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f7e6370"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f7e6370">
-    <command xml:space="preserve">say can i have a beer? to anne</command>
-    <result xml:space="preserve">There is no reply.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f825220"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f825220">
-    <command xml:space="preserve">say can i have a drink to anne</command>
-    <result xml:space="preserve">There is no reply.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f8270c0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f8270c0">
-    <command xml:space="preserve">say drinks to anne</command>
-    <result xml:space="preserve">There is no reply.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-  </item>
-  <item nodeId="node-0x5c8e0f829bf0">
-    <command xml:space="preserve">say beer to anne</command>
-    <result xml:space="preserve">There is no reply.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-  </item>
-  <item nodeId="node-0x5c8e0f452500">
-    <command xml:space="preserve">say drinks to anne</command>
-    <result xml:space="preserve">There is no reply.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-  </item>
-  <item nodeId="node-0x5c8e0f4559e0">
-    <command xml:space="preserve">open window</command>
-    <result xml:space="preserve">Ah the cool night air!
-
-You open Window.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f4595f0"/>
-      <child nodeId="node-0x5c8e0f45c8f0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f4595f0">
-    <command xml:space="preserve">say  i want drinks</command>
-    <result xml:space="preserve">(to Anne)
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1017"></child>
+            <child nodeId="node-1016"></child>
+        </children>
+    </item>
+    <item nodeId="node-1016">
+        <command xml:space="preserve">say  i want drinks</command>
+        <result xml:space="preserve">(to Anne)
 There is no reply.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-  </item>
-  <item nodeId="node-0x5c8e0f45c8f0">
-    <command xml:space="preserve">close window</command>
-    <result xml:space="preserve">You close Window.
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1017">
+        <command xml:space="preserve">close window</command>
+        <result xml:space="preserve">You close Window.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f45fbd0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f45fbd0">
-    <command xml:space="preserve">go to the kitchen</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1018"></child>
+        </children>
+    </item>
+    <item nodeId="node-1018">
+        <command xml:space="preserve">go to the kitchen</command>
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f94b1a0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f94b1a0">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1019"></child>
+        </children>
+    </item>
+    <item nodeId="node-1019">
+        <command xml:space="preserve">go south</command>
+        <result xml:space="preserve">
 Kitchen
-A kitchen, which would have looked nice if it weren&apos;t for the mountain of dishes in the sink and the various unidentifiable stains everywhere. It smells like someone burnt something
+A kitchen, which would have looked nice if it weren't for the mountain of dishes in the sink and the various unidentifiable stains everywhere. It smells like someone burnt something
 
 You can see toaster (in which is a burnt toast) here.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f463ac0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f463ac0">
-    <command xml:space="preserve">eat toast</command>
-    <result xml:space="preserve">(first taking the burnt toast)
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1020"></child>
+        </children>
+    </item>
+    <item nodeId="node-1020">
+        <command xml:space="preserve">eat toast</command>
+        <result xml:space="preserve">(first taking the burnt toast)
 You eat the burnt toast. Not bad.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f4668e0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f4668e0">
-    <command xml:space="preserve">spitting out the toast</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1021"></child>
+        </children>
+    </item>
+    <item nodeId="node-1021">
+        <command xml:space="preserve">spitting out the toast</command>
+        <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f9f1fa0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f9f1fa0">
-    <command xml:space="preserve">make another toast</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1022"></child>
+        </children>
+    </item>
+    <item nodeId="node-1022">
+        <command xml:space="preserve">make another toast</command>
+        <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f9f5350"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f9f5350">
-    <command xml:space="preserve">exit the kitchen</command>
-    <result xml:space="preserve">I only understood you as far as wanting to exit.
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1023"></child>
+        </children>
+    </item>
+    <item nodeId="node-1023">
+        <command xml:space="preserve">exit the kitchen</command>
+        <result xml:space="preserve">I only understood you as far as wanting to exit.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-  </item>
-  <item nodeId="node-0x5c8e0f9f81b0">
-    <command xml:space="preserve">say drinks to Anne</command>
-    <result xml:space="preserve">There is no reply.
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1049">
+        <command xml:space="preserve">hi anne</command>
+        <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f9fb320"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f9fb320">
-    <command xml:space="preserve">say  you have a beer to anne?</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1050"></child>
+        </children>
+    </item>
+    <item nodeId="node-1050">
+        <command xml:space="preserve">ask anne for drinks</command>
+        <result xml:space="preserve">Anne says, "Hey, want a beer?" 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1051"></child>
+        </children>
+    </item>
+    <item nodeId="node-1051">
+        <command xml:space="preserve">take beer</command>
+        <result xml:space="preserve">You have the beer now.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f459230"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f459230">
-    <command xml:space="preserve">say  you have a beer to anne</command>
-    <result xml:space="preserve">There is no reply.
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1052"></child>
+        </children>
+    </item>
+    <item nodeId="node-1052">
+        <command xml:space="preserve">Give me beer</command>
+        <result xml:space="preserve">You can't give the beer to yourself.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa03590"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa03590">
-    <command xml:space="preserve">say hello to anne</command>
-    <result xml:space="preserve">There is no reply.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa06940"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa06940">
-    <command xml:space="preserve">say beer to anne</command>
-    <result xml:space="preserve">There is no reply.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa09c40"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa09c40">
-    <command xml:space="preserve">ask anne about beer</command>
-    <result xml:space="preserve">There is no reply.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa0cee0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa0cee0">
-    <command xml:space="preserve">ask for beer</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa10270"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa10270">
-    <command xml:space="preserve">veer</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa13540"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa13540">
-    <command xml:space="preserve">beer</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-  </item>
-  <item nodeId="node-0x5c8e0fa167a0">
-    <command xml:space="preserve">ask anne for beer</command>
-    <result xml:space="preserve">Anne has better things to do.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa19a90"/>
-      <child nodeId="node-0x5c8e0fa23560"/>
-      <child nodeId="node-0x5c8e0fa2a390"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa19a90">
-    <command xml:space="preserve">ask anne about beer</command>
-    <result xml:space="preserve">There is no reply.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa1ce20"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa1ce20">
-    <command xml:space="preserve">tell anne to give me beer</command>
-    <result xml:space="preserve">I didn&apos;t understand that sentence.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa20200"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa20200">
-    <command xml:space="preserve">give me beer</command>
-    <result xml:space="preserve">(first taking the beer)
-That seems to belong to Anne.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-  </item>
-  <item nodeId="node-0x5c8e0fa23560">
-    <command xml:space="preserve">say do you have beer? to anne</command>
-    <result xml:space="preserve">There is no reply.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa26d30"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa26d30">
-    <command xml:space="preserve">ask anne for drinks</command>
-    <result xml:space="preserve">Anne says, &quot;Sorry, I don&apos;t have any beer.&quot; 
-Anne says, &quot;Sorry, I don&apos;t have any beer.&quot; 
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-  </item>
-  <item nodeId="node-0x5c8e0fa2a390">
-    <command xml:space="preserve">ask anne for drinks</command>
-    <result xml:space="preserve">Anne offers you a beer.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa2d610"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa2d610">
-    <command xml:space="preserve">take beer</command>
-    <result xml:space="preserve">You have the beer now.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-  </item>
-  <item nodeId="node-0x5c8e0fa30920">
-    <command xml:space="preserve">ask for drinks</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa33c00"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa33c00">
-    <command xml:space="preserve">ask anne for drinks</command>
-    <result xml:space="preserve">Anne says, &quot;Hey, want a beer?&quot; 
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa36f50"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa36f50">
-    <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">That was a rhetorical question.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa3a350"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa3a350">
-    <command xml:space="preserve">sorry</command>
-    <result xml:space="preserve">Oh, don&apos;t apologise.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa3d630"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa3d630">
-    <command xml:space="preserve">ask anne for drinks</command>
-    <result xml:space="preserve">Anne says, &quot;Hey, want a beer?&quot; 
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0f9ff230"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0f9ff230">
-    <command xml:space="preserve">ask anne for beer</command>
-    <result xml:space="preserve">Anne offers you a beer.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-  </item>
-  <item nodeId="node-0x5c8e0fa46650">
-    <command xml:space="preserve">ask anne for drinks</command>
-    <result xml:space="preserve">Anne offers you a beer.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa499f0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa499f0">
-    <command xml:space="preserve">take beer</command>
-    <result xml:space="preserve">You have the beer now.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-  </item>
-  <item nodeId="node-0x5c8e0fa4cdb0">
-    <command xml:space="preserve">hi anne</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa500f0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa500f0">
-    <command xml:space="preserve">ask anne for drinks</command>
-    <result xml:space="preserve">Anne says, &quot;Hey, want a beer?&quot; 
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa53530"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa53530">
-    <command xml:space="preserve">take beer</command>
-    <result xml:space="preserve">You have the beer now.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa568c0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa568c0">
-    <command xml:space="preserve">Give me beer</command>
-    <result xml:space="preserve">You can&apos;t give the beer to yourself.
-
-&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa59c00"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa59c00">
-    <command xml:space="preserve">say do you have beer</command>
-    <result xml:space="preserve">(to Anne)
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1053"></child>
+        </children>
+    </item>
+    <item nodeId="node-1053">
+        <command xml:space="preserve">say do you have beer</command>
+        <result xml:space="preserve">(to Anne)
 There is no reply.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa5d010"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa5d010">
-    <command xml:space="preserve">ask anne for beer</command>
-    <result xml:space="preserve">(Anne first taking the beer)
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1054"></child>
+        </children>
+    </item>
+    <item nodeId="node-1054">
+        <command xml:space="preserve">ask anne for beer</command>
+        <result xml:space="preserve">(Anne first taking the beer)
 Anne has better things to do.
 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-    <children>
-      <child nodeId="node-0x5c8e0fa60460"/>
-    </children>
-  </item>
-  <item nodeId="node-0x5c8e0fa60460">
-    <command xml:space="preserve">ask anne for drinks</command>
-    <result xml:space="preserve">Anne says, &quot;Sorry, I don&apos;t have any beer.&quot; 
-Anne says, &quot;Sorry, I don&apos;t have any beer.&quot; 
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1055"></child>
+        </children>
+    </item>
+    <item nodeId="node-1055">
+        <command xml:space="preserve">ask anne for drinks</command>
+        <result xml:space="preserve">Anne says, "Sorry, I don't have any beer." 
+Anne says, "Sorry, I don't have any beer." 
 &gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <annotation xml:space="preserve"></annotation>
-  </item>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1008">
+        <command xml:space="preserve">examine anne</command>
+        <result xml:space="preserve">Anne is blonde and tall. She has been your best friend since elementary school.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1009"></child>
+        </children>
+    </item>
+    <item nodeId="node-1009">
+        <command xml:space="preserve">open window</command>
+        <result xml:space="preserve">Ah the cool night air!
+
+You open Window.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1010"></child>
+        </children>
+    </item>
+    <item nodeId="node-1010">
+        <command xml:space="preserve">say can i have a beer? to anne</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1011"></child>
+        </children>
+    </item>
+    <item nodeId="node-1011">
+        <command xml:space="preserve">say can i have a drink to anne</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1012"></child>
+        </children>
+    </item>
+    <item nodeId="node-1012">
+        <command xml:space="preserve">say drinks to anne</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1041">
+        <command xml:space="preserve">ask for drinks</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1042"></child>
+        </children>
+    </item>
+    <item nodeId="node-1042">
+        <command xml:space="preserve">ask anne for drinks</command>
+        <result xml:space="preserve">Anne says, "Hey, want a beer?" 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1043"></child>
+        </children>
+    </item>
+    <item nodeId="node-1043">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">That was a rhetorical question.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1044"></child>
+        </children>
+    </item>
+    <item nodeId="node-1044">
+        <command xml:space="preserve">sorry</command>
+        <result xml:space="preserve">Oh, don't apologise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1045"></child>
+        </children>
+    </item>
+    <item nodeId="node-1045">
+        <command xml:space="preserve">ask anne for drinks</command>
+        <result xml:space="preserve">Anne says, "Hey, want a beer?" 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1046"></child>
+        </children>
+    </item>
+    <item nodeId="node-1046">
+        <command xml:space="preserve">ask anne for beer</command>
+        <result xml:space="preserve">Anne offers you a beer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1047">
+        <command xml:space="preserve">ask anne for drinks</command>
+        <result xml:space="preserve">Anne offers you a beer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1048"></child>
+        </children>
+    </item>
+    <item nodeId="node-1048">
+        <command xml:space="preserve">take beer</command>
+        <result xml:space="preserve">You have the beer now.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1033">
+        <command xml:space="preserve">ask anne for beer</command>
+        <result xml:space="preserve">Anne has better things to do.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1034"></child>
+            <child nodeId="node-1039"></child>
+            <child nodeId="node-1037"></child>
+        </children>
+    </item>
+    <item nodeId="node-1037">
+        <command xml:space="preserve">say do you have beer? to anne</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1038"></child>
+        </children>
+    </item>
+    <item nodeId="node-1038">
+        <command xml:space="preserve">ask anne for drinks</command>
+        <result xml:space="preserve">Anne says, "Sorry, I don't have any beer." 
+Anne says, "Sorry, I don't have any beer." 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1039">
+        <command xml:space="preserve">ask anne for drinks</command>
+        <result xml:space="preserve">Anne offers you a beer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1040"></child>
+        </children>
+    </item>
+    <item nodeId="node-1040">
+        <command xml:space="preserve">take beer</command>
+        <result xml:space="preserve">You have the beer now.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1034">
+        <command xml:space="preserve">ask anne about beer</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1035"></child>
+        </children>
+    </item>
+    <item nodeId="node-1035">
+        <command xml:space="preserve">tell anne to give me beer</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1036"></child>
+        </children>
+    </item>
+    <item nodeId="node-1036">
+        <command xml:space="preserve">give me beer</command>
+        <result xml:space="preserve">(first taking the beer)
+That seems to belong to Anne.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
 </Skein>

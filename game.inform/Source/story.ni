@@ -1,5 +1,9 @@
 "game" by "Johanna Rossoll, Axel Dultinger"
 
+[Vorple]
+Include Vorple by Juhana Leinonen.
+Release along with an interpreter.
+
 [declaring variables]
 [init variables here]
 
