@@ -36,12 +36,13 @@ kitchen is southwest of hall.
 bathroom is southeast of hall.
 living room is northwest of hall and north of kitchen.
 bedroom is northeast of hall.
-basement is below hall.
 garden is north of hall.
 
 front door is a door. front door is north of street and south of hall. The description is “The solid wooden barrier that separates you from the party and your friends. It stands as a threshold between the safety of home and the mysterium of the night ahead of you.”
-The indefinite article of the front door is "the"
 
+Stairs are a door. Stairs are below the hall and above the basement. The description of the Stairs is "A typical set of concrete stairs leading into the basement"
+
+The indefinite article of the front door is "the"
 [plot]
 
 [Steet stuff]
@@ -67,7 +68,17 @@ Instead of attacking the potted tree:
 Dad is a man in the car. The description is “Your guardian sits in the car, his face etched with a bit of concern as he waits for you to get into the house. His words of advice echo in your mind.[line break][line break]”
 
 Instead of talking to Dad:
-		say "Hey sport, don't worry"
+		say "Me:		Listen, Dad! I’m seventeen. I can take care of myself now.
+
+Dad:	Sure you can. I just know how this phase was when I was a teenager. 
+
+Mer:		Yeah I know. Wanted to try everything, but didnt see the danger of it all    
+		blablabla… I know all that.
+
+Dad:		Since you’re so wise, I’m sure you can resist the temptation and peer 
+		pressure on such parties.
+
+Me:		 I’ll try my best not to be a disgrace to my poor father."
 
 [Hall stuff]
 
@@ -79,14 +90,54 @@ Coat Rack is in hall. The description is "A sturdy coat rack stands near the ent
 
 Shelve is a container in hall. The description is "A old wooden shelv filled with things"
 
-Pictures are in shelve. The description is "A collection of family pictures lines the walls, capturing what seems to be a ski vacation of Jasmine and her family. It makes you think that she seems a lot more mature now.”
+Pictures are in hall. The description is "A collection of family pictures lines the walls, capturing what seems to be a ski vacation of Jasmine and her family. It makes you think that she seems a lot more mature now.”
 
-Candles are on shelv. [to do]
+Candles are on shelv. The description is "These scented candles smell vaguely like vanilla"
 
-Shoe Rack is in hall. The description is "" [finish next sprint]
+Shoe Rack is in hall. The description is "A worn shoe rack overfilled with the shoes of Jasmin's family and party guests. I should probably also take of my shoes"
+
+Jasmin is a women in hall. 
+
+Instead of opening stairs:
+	say "Jasmin: Hey let's go inside and meet my friends first"
+	
+Instead of talking to jasmin:
+	say
+"Jasmine:	Hi! You finally showed up. I was starting to think that you’re going to ditch me 
+here like you always do.
+
+Me: 	Hello to you too, and what do you mean, like I always do? This is the only 
+time I agreed to come to one of these parties. Remember?
+
+Jasmine:	Alright, alright, I’m too good for the crowd, let’s take your coat off and go 
+inside.
+
+Me:		From the smell of alcohol, I can already tell I’m going to like it.
+
+Jasmine:	Oh, that’s right. You’ve never been drunk. Maybe we can change your mind 
+tonight.
+
+Jasmine:	And, by the way, you know who is here. Maybe she/he can help you loosen 
+up tonight 
+
+Me:		Can we not talk about her/him right now? 
+
+Jasmine:	Okay, but promise me you are going to do something about it tonight 
+
+Me:		I promise! "
+
 
 [Kitchen stuff]
 
+Kitchen island is in kitchen. The description is "A standard kitchen island with a granite countertop"
+
+Vodka is on kitchen island. The description is "A cheap bottle of vodka. Doesn't taste very good but it sure gets you drunk "
+
+Beer is on kitchen island. The description is "A brown bottle of beer. Hopefully it's still cold"
+
+Tequila is on kitchen island. The description is "A usual bottle of tequila with the funny sombrero cap on top."
+
+Absynth is on kitchen island. The description is "I have never tried this and it should probably stay that way. Can't imagien it tasting any good"
 [Bathroom stuff]
 
 [Living room stuff]
