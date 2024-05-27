@@ -1,13 +1,15 @@
 "game" by "Johanna Rossoll, Axel Dultinger"
 
-[declaring variables]
-[init variables here]
+[variables]
+The player consents flag is a truth state that varies. The player consents flag is false.
 
 Talking to is an action applying to one visible thing. Understand "talk to [someone]" or “converse with [someone]” as talking to.
 
 Check talking to: say "[The noun] doesn't reply."
 
 [declaring rooms]
+
+Bathroom is a room. "The bathroom looks very clean and fresh compared to the rest of the house. There’s a sink, a bathroom mirror, a cabinet, and a towel holder here. You also see your friend Anna. You can get into action and try 'take towel'."
 
 Street is a room. "[if unvisited]Your dad drove you to a party some friends at school invited you to. You weren't sure if you should go, but they said you’ll have a lot of fun.[line break] [line break]You just exited the car and convinced him not to escort you to the front door of the house, as you hear him roll down the window of his car: ‘Be careful, dear. And remember what we talked about - do not drink any alcohol and absolutely no drugs![end if][line break]Other then your dad there is no one outside and you can already hear the music coming from the light up house."
 
@@ -18,8 +20,6 @@ She takes off into the living room, and you are left by yourself in the lovely, 
 
 Kitchen is a room. "The kitchen is messy, lots of people are here. They seem to be playing some kind of drinking game with shots."
 
-Bathroom is a room. "The bathroom looks very clean and fresh compared to the rest of the house."
-
 Living Room is a room. "The living room is the origin of the loud music you heard from across the hall. It is pretty crowded but no one seems to be dancing."
 
 Bedroom is a room. "The bedroom is a very silent place, although you can still hear music  from another room."
@@ -28,7 +28,7 @@ Basement is a room. "In the basement you enter a dimly lit room with a couch. Yo
 
 Garden is a room. "Ah. The cool night air! You open the door to the garden and see a big pool with LEDs and some people in and around it, although it is quite cold for August."
 
-Chapter 1 - Entering the Party
+Chapter 2 - Entering the Party
 
 [more specific map creation (chapter 1)]
 
@@ -138,7 +138,101 @@ Beer is on kitchen island. The description is "A brown bottle of beer. Hopefully
 Tequila is on kitchen island. The description is "A usual bottle of tequila with the funny sombrero cap on top."
 
 Absynth is on kitchen island. The description is "I have never tried this and it should probably stay that way. Can't imagien it tasting any good"
+
 [Bathroom stuff]
+Chapter 2 - The tutorial bathroom
+
+The tutorial bathroom is a scene. The tutorial bathroom begins when play begins. The tutorial bathroom ends when the player consents.
+
+The sink is a supporter in the bathroom. The description is "A pristine white sink with a shiny faucet."
+
+The bathroom mirror is fixed in place in the bathroom. The description is "A large mirror reflecting the room."
+
+The cabinet is a closed openable container in the bathroom. The description is "A small cabinet under the sink."
+
+A key is in the cabinet. The description is "A small silver key."
+
+The holder is a supporter in the bathroom. The description is "A towel rack with a soft, fluffy towel on it."
+
+A towel is on the holder. The description is "A soft, fluffy towel."
+
+A soap bar is on the sink. The description is "A fresh bar of soap."
+
+The faucet is a device in the bathroom. The faucet can be switched on. The faucet can be switched off. The faucet is switched off. The description is "A shiny faucet."
+
+Anna is a woman in the bathroom. The description is "Anna is here, ready to help with the tutorial."
+
+To decide whether the player consents:
+    if the player consents flag is true, decide yes;
+    decide no.
+
+When the tutorial bathroom begins:
+    say "Welcome to the tutorial! Let's start by teaching you some basic commands. You can examine the area around you by typing 'examine xyz'. Type 'i' or 'inv' at any point of the game, to see your inventory. If you want to skip the Tutorial, because you are familiar with Interactive Fiction, simply type 'yes' to dive right into the story!";
+
+After taking the towel for the first time:
+    say "Good job! Now, type 'drop towel' to put it down.";
+
+After dropping the towel for the first time:
+    say "Great! Now, let's put it on the towel holder. Type 'put towel on holder'.";
+
+After putting the towel on the holder for the first time:
+    say "Well done! Now, let's interact with something else. Type 'eat soap'.";
+
+Instead of eating the soap for the first time:
+    say "That doesn't taste good, does it? Now, let's move around. Type 'go northwest' to leave the bathroom.";
+
+After going to the hall for the first time:
+    say "You are now in the hallway. Let's go back to the bathroom by typing 'go southeast'.";
+
+After going to the bathroom for the first time:
+    say "You're back in the bathroom. Type 'enter cabinet'.";
+
+Instead of entering the cabinet:
+    say "The cabinet is too small to enter. Let's examine the bathroom mirror. Type 'examine bathroom mirror'.";
+
+After examining the bathroom mirror for the first time:
+    say "Nice! Now, let's open the cabinet. Type 'open cabinet'.";
+
+After opening the cabinet for the first time:
+    say "Fantastic! Now, let's switch something on. Type 'switch on faucet'.";
+
+Instead of switching on the faucet:
+    say "You turn the faucet on, and water starts flowing. Now, let's switch it off. Type 'switch off faucet'.";
+    now the faucet is switched on.
+
+Instead of switching off the faucet:
+    say "You turn the faucet off, and water stops flowing. Try closing the cabinet.";
+    now the faucet is switched off.
+
+After switching off the faucet for the first time:
+    say "Excellent! Let's open the cabinet now. Type 'open cabinet'.";
+
+After opening the cabinet for the first time:
+    say "Well done! Now, let's close it. Type 'close cabinet'.";
+
+After closing the cabinet for the first time:
+    say "Great! Now, let's practice giving something. Take the key from the cabinet (you have to open it again) and type 'give key to Anna'.";
+
+Instead of giving the key to Anna for the first time:
+    say "Nice work! Now, let's ask Anna for something. Type 'ask Anna for towel'.";
+now Anna carries the key.
+
+Instead of asking Anna for something:
+    say "Anna says: 'Here you go!' and hands you a towel. 
+
+	Good job! Now, let's touch something. Type 'touch sink'.";
+    now the player carries the towel.
+
+After touching the sink for the first time:
+    say "The sink feels cold and smooth. 
+
+	Great! Finally, let's say something. Type 'yes'.";
+
+Instead of saying yes for the first time:
+    say "Congratulations! You've completed the tutorial. Enjoy the rest of the party!";
+    	now the player consents flag is true;
+	now the player is in Street.
+
 
 [Living room stuff]
 
