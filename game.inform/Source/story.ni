@@ -15,8 +15,7 @@ Street is a room. "[if unvisited]Your dad drove you to a party some friends at s
 
 Hall is a room. “[if unvisited]As you enter the hallway, you are greeted by a friend of yours, Jasmine. She’s a year older than you - a plump, dark haired girl with blue eyes. 
 She greets you with a happy expression: ‘You made it! To be honest, I didn’t expect to see you here today. Glad you’re here!’ 
-She takes off into the living room, and you are left by yourself in the lovely, old hall. [end if]It is a cozy room, with warm tapestry and you hear loud sounds, music from one of the other rooms.”
-
+[end if]The hall is a cozy room, with warm tapestry and you hear loud sounds, music from one of the other rooms.”
 
 Kitchen is a room. "The kitchen is messy, lots of people are here. They seem to be playing some kind of drinking game with shots."
 
@@ -63,7 +62,7 @@ Instead of attacking the potted tree:
 		now the description of the potted tree is "A once nice looking potted palm tree, which has been reduced to mere rubble";
 		say "You destroy the potted palm tree and it shatters on the ground, spreading compost all over the floor and the plant sadly lying on the ground.";
 	else:
-		say "It's already destroyed, there is no need to go further";
+		say "It's already destroyed, there is no need to go further.";
 
 Dad is a man in the car. The description is “Your guardian sits in the car, his face etched with a bit of concern as he waits for you to get into the house. His words of advice echo in your mind.[line break][line break]”
 
@@ -72,7 +71,7 @@ Instead of talking to Dad:
 
 Dad:	Sure you can. I just know how this phase was when I was a teenager. 
 
-Mer:		Yeah I know. Wanted to try everything, but didnt see the danger of it all    
+Me:		Yeah I know. Wanted to try everything, but didnt see the danger of it all    
 		blablabla… I know all that.
 
 Dad:		Since you’re so wise, I’m sure you can resist the temptation and peer 
@@ -92,16 +91,16 @@ Shelve is a container in hall. The description is "A old wooden shelv filled wit
 
 Pictures are in hall. The description is "A collection of family pictures lines the walls, capturing what seems to be a ski vacation of Jasmine and her family. It makes you think that she seems a lot more mature now.”
 
-Candles are on shelv. The description is "These scented candles smell vaguely like vanilla"
+Candles are on shelf. The description is "These scented candles smell vaguely like vanilla"
 
 Shoe Rack is in hall. The description is "A worn shoe rack overfilled with the shoes of Jasmin's family and party guests. I should probably also take of my shoes"
 
-Jasmin is a women in hall. 
+Jasmine is a women in hall. 
 
 Instead of opening stairs:
-	say "Jasmin: Hey let's go inside and meet my friends first"
+	say "Jasmine: Hey let's go inside and meet my friends first"
 	
-Instead of talking to jasmin:
+Instead of talking to Jasmine:
 	say
 "Jasmine:	Hi! You finally showed up. I was starting to think that you’re going to ditch me 
 here like you always do.
@@ -181,7 +180,7 @@ After putting the towel on the holder for the first time:
 Instead of eating the soap for the first time:
     say "That doesn't taste good, does it? Now, let's move around. Type 'go northwest' to leave the bathroom.";
 
-After going to the hall for the first time:
+After going to the hall for the first time during the tutorial bathroom:
     say "You are now in the hallway. Let's go back to the bathroom by typing 'go southeast'.";
 
 After going to the bathroom for the first time:
@@ -233,6 +232,12 @@ Instead of saying yes for the first time:
     	now the player consents flag is true;
 	now the player is in Street.
 
+Instead of going to the bathroom:
+	if the player consents flag is false:
+		now the player consents flag is true;
+		continue the action;
+	else:
+		say "You've already consented to skip the tutorial. There's no need to go back to the bathroom.";
 
 [Living room stuff]
 
