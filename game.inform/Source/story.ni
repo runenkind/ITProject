@@ -23,7 +23,7 @@ Living Room is a room. "The living room is the origin of the loud music you hear
 
 Bedroom is a room. "The bedroom is a very silent place, although you can still hear music  from another room."
 
-Basement is a room. "In the basement you enter a dimly lit room with a couch. You hear different music than upstairs blasting from speakers and you find that this seems like a more energetic room."
+Basement is a room. “You descend into the basement, where the thumping bass of the music becomes almost tangible, pulsating through the air. The room is alive with movement, bodies swaying to the rhythm in the dimly lit space.”
 
 Garden is a room. "Ah. The cool night air! You open the door to the garden and see a big pool with LEDs and some people in and around it, although it is quite cold for August."
 
@@ -37,11 +37,12 @@ living room is northwest of hall and north of kitchen.
 bedroom is northeast of hall.
 garden is north of hall.
 
-front door is a door. front door is north of street and south of hall. The description is “The solid wooden barrier that separates you from the party and your friends. It stands as a threshold between the safety of home and the mysterium of the night ahead of you.”
+front door is a door. front door is north of street and south of hall. The description is “The solid wooden barrier that separates you from the party and your friends. It stands as a threshold between the safety of home and the mystery of the night ahead of you.”
 
 Stairs are a door. Stairs are below the hall and above the basement. The description of the Stairs is "A typical set of concrete stairs leading into the basement"
 
 The indefinite article of the front door is "the"
+
 [plot]
 
 [Steet stuff]
@@ -96,9 +97,6 @@ Candles are on shelf. The description is "These scented candles smell vaguely li
 Shoe Rack is in hall. The description is "A worn shoe rack overfilled with the shoes of Jasmin's family and party guests. I should probably also take of my shoes"
 
 Jasmine is a women in hall. 
-
-Instead of opening stairs:
-	say "Jasmine: Hey let's go inside and meet my friends first"
 	
 Instead of talking to Jasmine:
 	say
@@ -136,10 +134,22 @@ Beer is on kitchen island. The description is "A brown bottle of beer. Hopefully
 
 Tequila is on kitchen island. The description is "A usual bottle of tequila with the funny sombrero cap on top."
 
-Absynth is on kitchen island. The description is "I have never tried this and it should probably stay that way. Can't imagien it tasting any good"
+Absynth is on kitchen island. The description is "I have never tried this and it should probably stay that way. Can't imagine it tasting any good"
+
+[Basement stuff]
+
+Couch is in basement. The description is “Positioned in a corner of the basement, the couch is worn but comfortable, where Clip, a young guy you’ve vaguely met before, sits.”
+
+Boom Box is in basement. The description is “Positioned in a corner, the boom box blasts rhythmic beats that pulse through the basement, setting the energetic atmosphere for the party.”
+
+Old Rug is in basement. The description is “Spread across the cold concrete floor, an old rug provides a semblance of comfort in the otherwise stark basement. Its faded colors and frayed edges bear the marks of countless parties.”
+
+Clip is a man in basement.  “A twenty year old man with a blonde buzz cut and bright green eyes. He smells of cigarettes and energy drinks. He smiles back at you as you look at him.”
+
+Clip holds Blotter Paper. The description is “A small square of paper adorned with intricate patterns." 
 
 [Bathroom stuff]
-Chapter 2 - The tutorial bathroom
+Chapter 1 - The tutorial bathroom
 
 The tutorial bathroom is a scene. The tutorial bathroom begins when play begins. The tutorial bathroom ends when the player consents.
 
@@ -242,7 +252,5 @@ Instead of going to the bathroom:
 [Living room stuff]
 
 [Bedroom stuff]
-
-[Basement stuff]
 
 [Garden stuff]
