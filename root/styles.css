@@ -139,3 +139,85 @@ input[type="submit"] {
 @keyframes hide-cursor {
     to { border-color: transparent; }
 }
+
+iframe {
+    background-color: wheat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+
+  }
+#minimap {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 60%;
+    left : 80%;
+    /* width: 16%;
+    height: 20%; */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc; 
+    z-index: 100; 
+    background-image: url('Images/map.jpg');
+    background-size: cover;
+}
+
+
+.container
+{
+	margin-top: 2em;
+}
+
+#gameport
+{
+	background: white;
+	bottom: 0px;
+	left: 15.4em;
+	line-height: 1.4;
+	margin: 0px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+a
+{
+	text-decoration: none;
+	color: #369;
+}
+
+a:visited
+{
+	text-decoration: none;
+	color: #006;
+}
+
+a:hover
+{
+	text-decoration: none;
+	color: #33C;
+}
+
+@media screen and (max-device-width: 480px)
+{
+	.coverimage, .introduction, .links, .about, .playinfo, .source, .sourceintroduction, .sourcecoverimage, .notes
+	{
+		float: none;
+		margin-left: 1em;
+		text-align: left;
+	}
+
+	.play .coverimage, .play .links, .play .interpretercredit
+	{
+		display: none;
+	}
+	
+	#gameport
+	{
+		left: 0px;
+		width: auto;
+	}
+}
+

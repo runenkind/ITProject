@@ -1,5 +1,5 @@
 "game" by "Johanna Rossoll, Axel Dultinger"
-
+Release along with an interpreter.
 [variables]
 The player consents flag is a truth state that varies. The player consents flag is false.
 
@@ -254,3 +254,4 @@ Instead of going to the bathroom:
 [Bedroom stuff]
 
 [Garden stuff]
+Release along with an interpreter.
