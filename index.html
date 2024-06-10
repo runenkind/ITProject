@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-mean-o-acid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <main class="row justify-content-center align-items-center">
+            <!-- Welcome menu -->
+            <div id="welcomeNewplayer" class="col-md-6">
+                <form class="menu" id="welcomemenu">            
+                    <h1>
+                        <span>Welcome</span>
+                        <br>
+                        <span>to</span>
+                        <br>
+                        <span>A-mean-o-acid</span>
+                    </h1>
+                    <input autofocus id="name" placeholder="Please enter your name" type="text">
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+            </div>
+            <!-- Main menu -->
+            <div id="main" class="col-md-6" style="display: none;">
+                <form class="menu" id="mainmenu">
+                    <h1>
+                        <span id="hello"></span>
+                        <br>
+                        <br>
+                        <br>
+                        <span id="continue"></span>
+                        <br>
+                        <a href="game.html"><span id="ng"> New game</span></a>
+                        <br>
+                        <span id="settings" onclick="displayMenu('settingsmenu')">Settings</span>
+                        <br>
+                        <span id="help" onclick="displayMenu('helpmenu')">Get help</span>
+                        <br>
+                        <span id="credits" onclick="displayMenu('helpmenu')">Credits</span>
+                    </h1>
+                </form>
+            </div>
+            <!-- Settings menu -->
+            <div id="settingsmenu" class="col-md-6" style="display: none;">
+                <form class="menu">
+                    <h1>
+                        <span>Settings</span>
+                        <br>
+                        <br>
+                        <br>
+                        <span>Sound</span>
+                        <br>
+                        <label><input type="checkbox" id="toggleAudio"> Audio On/Off</label>
+                        <br>
+                        <div class="volume-control-container">
+                            <label for="volumeControl">Volume</label>
+                            <input type="range" id="volumeControl" min="0" max="1" step="0.1">
+                        </div>
+                        <br>
+                        <span id="back" onclick="displayMenu('main')">Back</span>
+                    </h1>
+                </form>
+            </div>
+
+            <!-- Help menu -->
+            <div id="helpmenu" class="col-md-6" style="display: none;">
+                <form class="menu">
+                    <h1>
+                        <span>Help</span>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <span>Links</span>
+                        <br>
+                        <span id="back" onclick="displayMenu('main')">Back</span>
+                    </h1>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
