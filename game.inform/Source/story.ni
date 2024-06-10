@@ -7,6 +7,13 @@ Talking to is an action applying to one visible thing. Understand "talk to [some
 
 Check talking to: say "[The noun] doesn't reply."
 
+[Vorple]
+Include Vorple by Juhana Leinonen.
+Release along with an interpreter.
+
+[declaring variables]
+[init variables here]
+
 [declaring rooms]
 
 Bathroom is a room. "The bathroom looks very clean and fresh compared to the rest of the house. There’s a sink, a bathroom mirror, a cabinet, and a towel holder here. You also see your friend Anna. You can get into action and try 'take towel'."
@@ -252,5 +259,9 @@ Instead of going to the bathroom:
 [Living room stuff]
 
 [Bedroom stuff]
+
+[Garden stuff]
+
+[Basement stuff]
 
 [Garden stuff]
