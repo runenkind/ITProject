@@ -1,11 +1,16 @@
-"game" by "Johanna Rossoll, Axel Dultinger"
+"A mean O acid" by "Johanna, Axel, Parsa"
 Release along with an interpreter.
 [variables]
 The player consents flag is a truth state that varies. The player consents flag is false.
+Sobriety is a number that varies. Sobriety is 5.
 
+[actions]
 Talking to is an action applying to one visible thing. Understand "talk to [someone]" or “converse with [someone]” as talking to.
-
 Check talking to: say "[The noun] doesn't reply."
+
+Rejecting is an action applying to one visible thing. Understand "reject [something]" or "reject [any thing]" as rejecting.
+Helping is an action applying to one visible thing. Understand "help [someone]" or "aid [someone]" as helping.
+Leaving is an action applying to one visible thing. Understand "leave [someone]" or "abandon [someone]" as leaving.
 
 [declaring rooms]
 
@@ -144,9 +149,32 @@ Boom Box is in basement. The description is “Positioned in a corner, the boom 
 
 Old Rug is in basement. The description is “Spread across the cold concrete floor, an old rug provides a semblance of comfort in the otherwise stark basement. Its faded colors and frayed edges bear the marks of countless parties.”
 
-Clip is a man in basement.  “A twenty year old man with a blonde buzz cut and bright green eyes. He smells of cigarettes and energy drinks. He smiles back at you as you look at him.”
+Clip is a man in basement. The description is “A twenty year old man with a blonde buzz cut and bright green eyes. He smells of cigarettes and energy drinks. He smiles back at you as you look at him.”
 
-Clip holds Blotter Paper. The description is “A small square of paper adorned with intricate patterns." 
+Blotter Paper is held by Clip. The description is “A small square of paper adorned with intricate patterns." 
+
+After going to the basement for the first time:
+	say "In the midst of all the people dancing and singing, you see a tall guy with a buzzcut - he introduces himself as ‘Clip’. He holds out his hand and reveals a small square of paper. He extends it towards you. With a grin he says: ‘This will change your life.’ Your decision hangs in the balance - to take or reject?";
+	now the player is in the basement.
+
+Instead of taking blotter paper when the player is in the basement:
+	now the player carries the blotter paper;
+	say "You put the paper under your tongue as instructed by Clip. After a short period of time, reality warps around you, colors bleeding into one another, and the music morphing into a symphony of chaos. It's a journey into the recesses of your mind, but one fraught with peril: Colors pulsate with an overwhelming intensity, morphing into surreal shapes that dance before your disbelieving eyes. Every sound becomes a discordant chaotic noise, echoing endlessly. Paranoia grips your thoughts, the shadows seem to be attacking you from everywhere, they flicker and dance, morphing into grotesque forms that seem to mock your terror. You fall unconscious.";
+	end the story saying "You have fallen unconscious.";
+
+Instead of rejecting blotter paper:
+	say "You hang out with Clip for a while but he seems a bit zoned out after a while. It’s as if he’s been plunged into a nightmare. Suddenly, his eyes widen with fear making you uncomfortable. You want to stand up and leave but your mind in empathy for Clip is shouting: ‘What is happening?!’ His eyes are now darting frantically around the room as if searching for escape from unseen terrors. He jumps up from the couch, jerky and erratic. What do you do, leave or help?";
+
+Instead of helping Clip:
+	now Clip is in the garden;
+	say "You drag Clip to the garden to get a calmer and more quiet environment for him. You sit him down on the floor and reassure him that everything is going to be fine. You try calming him down by doing some breathing exercises and bringing him a glass of water from the kitchen. It helps him a lot. He should be safe here now. You can leave him with all your friends up here.";
+	increase sobriety by 1;
+	now the player is in the garden;
+
+Instead of leaving Clip when Clip is in the basement:
+	say "You leave the cellar and lock out the music as you shut the cellar door behind you. You hear a muffled scream from downstairs - you’re sure of it - it was Clip.";
+	decrease sobriety by 1;
+	now the player is in the hall;
 
 [Bathroom stuff]
 Chapter 1 - The tutorial bathroom
