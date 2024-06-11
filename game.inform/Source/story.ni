@@ -282,4 +282,6 @@ Instead of going to the bathroom:
 [Bedroom stuff]
 
 [Garden stuff]
-Release along with an interpreter.
+Include Vorple by Juhana Leinonen.
+Include Vorple Screen Effects by Juhana Leinonen.
+Release along with the "Vorple" interpreter.
