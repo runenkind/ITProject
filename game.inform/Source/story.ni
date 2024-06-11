@@ -1,5 +1,5 @@
 "A mean O acid" by "Johanna, Axel, Parsa"
-Release along with an interpreter.
+
 [variables]
 The player consents flag is a truth state that varies. The player consents flag is false.
 Sobriety is a number that varies. Sobriety is 5.
@@ -34,7 +34,7 @@ Garden is a room. "Ah. The cool night air! You open the door to the garden and s
 
 Chapter 2 - Entering the Party
 
-[more specific map creation (chapter 1)]
+[more specific map creation]
 
 kitchen is southwest of hall.
 bathroom is southeast of hall.
