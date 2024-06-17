@@ -1,19 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const toggleAudio = document.getElementById('toggleAudio');
-    const volumeControl = document.getElementById('volumeControl');
     const welcomemenu = document.querySelector('#welcomemenu');
-
-    toggleAudio.checked = true;
-    toggleAudio.addEventListener('change', () => {
-        const bgmusic = document.getElementById('bgmusic');
-        toggleAudio.checked ? bgmusic.play() : bgmusic.pause();
-    });
-
-    volumeControl.value = 0.5;
-    volumeControl.addEventListener('input', () => {
-        const bgmusic = document.getElementById('bgmusic');
-        bgmusic.volume = volumeControl.value;
-    });
 
     welcomemenu.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -41,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function displayMenu(menuId) {
-    const menus = ['welcomeNewplayer', 'main', 'settingsmenu', 'helpmenu'];
+    const menus = ['welcomeNewplayer', 'main', 'helpmenu'];
     menus.forEach(menu => {
         document.getElementById(menu).classList.add('d-none');
         document.getElementById(menu).querySelector('.menu').classList.remove('wide');
