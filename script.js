@@ -52,6 +52,10 @@ function displayMenu(menuId) {
     var menus = ['welcomeNewplayer', 'main', 'settingsmenu', 'helpmenu'];
     for (var i = 0; i < menus.length; i++) {
         document.getElementById(menus[i]).style.display = 'none';
+        document.getElementById(menus[i]).querySelector('.menu').classList.remove('wide');
     }
     document.getElementById(menuId).style.display = 'block';
+    if (menuId === 'helpmenu') {
+        document.getElementById(menuId).querySelector('.menu').classList.add('wide');
+    }
 }

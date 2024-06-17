@@ -38,13 +38,20 @@ h1 {
     margin-top: 50px;
     margin-bottom: 20px;
 }
+
 .menu {
     border: 2px solid #000;
     background-color: #ccc;
     padding: 20px;
     max-width: 300px;
     margin: 0 auto;
+    transition: max-width 0.5s ease;
 }
+
+.menu.wide {
+    max-width: 800px;
+}
+
 input[type="text"], input[type="submit"] {
     margin: 10px 0;
     padding: 8px;
