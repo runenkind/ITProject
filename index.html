@@ -12,7 +12,7 @@
         <main class="row justify-content-center align-items-center">
             <!-- Welcome menu -->
             <div id="welcomeNewplayer" class="col-md-6">
-                <form class="menu" id="welcomemenu">            
+                <form class="menu" id="welcomemenu">
                     <h1>
                         <span>Welcome</span>
                         <br>
@@ -25,16 +25,14 @@
                 </form>
             </div>
             <!-- Main menu -->
-            <div id="main" class="col-md-6" style="display: none;">
+            <div id="main" class="col-md-6 d-none">
                 <form class="menu" id="mainmenu">
                     <h1>
                         <span id="hello"></span>
-                        <br>
-                        <br>
-                        <br>
+                        <br><br><br>
                         <span id="continue"></span>
                         <br>
-                        <a href="game.html" style="text-decoration: none;"><span id="ng"> New game</span></a>
+                        <a href="game.html" class="text-decoration-none"><span id="ng">New game</span></a>
                         <br>
                         <span id="settings" onclick="displayMenu('settingsmenu')">Settings</span>
                         <br>
@@ -45,13 +43,11 @@
                 </form>
             </div>
             <!-- Settings menu -->
-            <div id="settingsmenu" class="col-md-6" style="display: none;">
+            <div id="settingsmenu" class="col-md-6 d-none">
                 <form class="menu">
                     <h1>
                         <span>Settings</span>
-                        <br>
-                        <br>
-                        <br>
+                        <br><br><br>
                         <span>Sound</span>
                         <br>
                         <label><input type="checkbox" id="toggleAudio"> Audio On/Off</label>
@@ -65,16 +61,12 @@
                     </h1>
                 </form>
             </div>
-
             <!-- Help menu -->
-            <div id="helpmenu" class="col-md-6" style="display: none;">
+            <div id="helpmenu" class="col-md-6 d-none">
                 <form class="menu">
                     <h1>
                         <span>Help</span>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
+                        <br><br><br><br>
                         <span>Links</span>
                         <br>
                         <a href="https://teens.drugabuse.gov" target="_blank">National Institute on Drug Abuse for Teens (NIDA for Teens)</a>
