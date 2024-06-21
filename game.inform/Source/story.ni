@@ -1,5 +1,3 @@
-"A Mean O Acid" by "Johanna, Axel, Parsa"
-
 [variables]
 The player consents flag is a truth state that varies. The player consents flag is false.
 Sobriety is a number that varies. Sobriety is 5.
@@ -211,7 +209,7 @@ To decide whether the player consents:
     decide no.
 
 When the tutorial bathroom begins:
-    say "Welcome to the tutorial! Let's start by teaching you some basic commands. You can examine the area around you by typing 'examine xyz'. Type 'i' or 'inv' at any point of the game, to see your inventory. If you want to skip the Tutorial, because you are familiar with Interactive Fiction, simply type 'yes' to dive right into the story!";
+    say "Welcome to the tutorial! Let's start by teaching you some basic commands. You can examine the area around you by typing 'examine xyz'. You can use 'talk to *someone*' to trigger interactions, and you can type 'leave party' at any time to end the game. Type 'i' or 'inv' at any point of the game, to see your inventory. If you want to skip the Tutorial, because you are familiar with Interactive Fiction, simply type 'yes' to dive right into the story!";
 
 After taking the towel for the first time:
     say "Good job! Now, type 'drop towel' to put it down.";
@@ -289,6 +287,53 @@ Instead of going to the bathroom:
 [Bedroom stuff]
 
 [Garden stuff]
+
+[ending]
+[actions]
+Leaving the party is an action applying to nothing. Understand "leave party" or "exit party" or "go home" as leaving the party.
+
+Carry out leaving the party:
+	say "You decide it's time to leave the party.";
+	if sobriety is 5:
+		say "As you say goodbye to your host and others, a friend comes over and asks to walk home with you. 'The party was a bit much, and I'm glad you're strong enough to not get pressured into anything stupid,' they say.";
+		end the story saying "You walk home safely with your friend, feeling good about your choices.";
+	else if sobriety is 4:
+		say "One of your friends gives you a sandwich and a big hug. 'Let me walk you home,' they say.";
+		if player consents:
+			say "You accept their offer. They tell you bad jokes along the way, and you get home safe.";
+			end the story saying "You arrive home safely, feeling grateful for your friend's company.";
+		else:
+			say "You decline their offer. Unfortunately, you trip on the way and scrape your knee pretty bad (ouch).";
+			end the story saying "You arrive home, but your knee hurts a lot.";
+	else if sobriety is 3:
+		say "One of your friends asks if they should call your parents to come pick you up.";
+		if player consents:
+			say "You agree, and your parents come to pick you up. You get home safe.";
+			end the story saying "You arrive home safely, feeling relieved.";
+		else:
+			say "You decline their offer. You end up throwing up on the way home and see your crush going home with someone else.";
+			end the story saying "You arrive home, feeling miserable.";
+	else if sobriety is 2:
+		if player helped someone at least once:
+			say "Luckily, one of your friends called your parents to come get you. Your parents are already there to pick you up.";
+			end the story saying "You arrive home safely, feeling thankful for your friend.";
+		else:
+			say "You call a taxi, but end up throwing up all over it. The taxi driver makes you pay a super high cleaning fee, and your parents are really mad.";
+			end the story saying "You arrive home, but your parents are furious with you.";
+	else:
+		say "You trip on your way out and hit your head on the ground. You hear your friends scream as you lose consciousness.";
+		end the story saying "You died.";
+
+[Helper rule to check if player has helped anyone at least once]
+A helping action flag is a truth state that varies. The helping action flag is false.
+
+After helping someone:
+	now the helping action flag is true;
+
+To decide whether player helped someone at least once:
+	if the helping action flag is true, decide yes;
+	decide no;
+
 Include Vorple by Juhana Leinonen.
 Include Vorple Screen Effects by Juhana Leinonen.
 Release along with the "Vorple" interpreter.
