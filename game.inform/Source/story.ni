@@ -1,4 +1,4 @@
-"A mean O acid" by "Johanna, Axel, Parsa"
+"A Mean O Acid" by "Johanna, Axel, Parsa"
 
 [variables]
 The player consents flag is a truth state that varies. The player consents flag is false.
@@ -153,9 +153,16 @@ Clip is a man in basement. The description is “A twenty year old man with a bl
 
 Blotter Paper is held by Clip. The description is “A small square of paper adorned with intricate patterns." 
 
-After going to the basement for the first time:
-	say "In the midst of all the people dancing and singing, you see a tall guy with a buzzcut - he introduces himself as ‘Clip’. He holds out his hand and reveals a small square of paper. He extends it towards you. With a grin he says: ‘This will change your life.’ Your decision hangs in the balance - to take or reject?";
-	now the player is in the basement.
+First time in the Basement is a truth state that varies. First time in the Basement is true.
+
+After going to the Basement for the first time:
+	if First time in the Basement is true:
+		now First time in the Basement is false;
+		continue the action.
+
+Every turn when First time in the Basement is false:
+	now First time in the Basement is true;
+	say "In the midst of all the people dancing and singing, you see a tall guy with a buzzcut - he introduces himself as 'Clip'. He holds out his hand and reveals a small square of paper. He extends it towards you. With a grin he says: 'This will change your life.' Your decision hangs in the balance - to take or reject?";
 
 Instead of taking blotter paper when the player is in the basement:
 	now the player carries the blotter paper;
