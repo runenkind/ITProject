@@ -50,7 +50,7 @@ The indefinite article of the front door is "the"
 
 [plot]
 
-[Steet stuff]
+[Street stuff]
 Porch light  is in street. The description is “A soft glow emanates from the porch light above, casting a warm and inviting ambiance over the scene.”
 The indefinite article of the porch light is "a"
 
@@ -292,3 +292,4 @@ Instead of going to the bathroom:
 Include Vorple by Juhana Leinonen.
 Include Vorple Screen Effects by Juhana Leinonen.
 Release along with the "Vorple" interpreter.
+Release along with the style sheet "myCustomStyles.css".
