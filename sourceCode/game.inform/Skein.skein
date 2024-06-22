@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0x61070f3bba10" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Inform 7</generator>
+  <activeNode nodeId="node-0x61070f8bc7b0"/>
+  <item nodeId="node-0x61070f3bba10">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+
+Welcome to the tutorial! Let&apos;s start by teaching you some basic commands. You can examine the area around you by typing &quot;examine xyz&quot;. You can use &quot;talk to *someone*&quot; to trigger interactions, and you can type &quot;leave party&quot; at any time to end the game. Type &quot;i&quot; or &quot;inv&quot; at any point of the game, to see your inventory. If you want to skip the Tutorial, because you are familiar with Interactive Fiction, simply type &quot;yes&quot; to dive right into the story!
+
+Welcome
+An Interactive Fiction
+Release 1 / Serial number 240621 / Inform 7 v10.1.2 / D
+
+Bathroom
+The bathroom looks very clean and fresh compared to the rest of the house. There&apos;s a sink, a bathroom mirror, a cabinet, and a towel holder here. You also see your friend Anna. You can get into action and try &quot;take towel&quot;.
+
+You can see a sink (on which is a soap bar), a bathroom mirror, a cabinet (closed), a holder (on which is a towel), a faucet and Anna here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f4a9740"/>
+      <child nodeId="node-0x61070ffdea50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f4a9740">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">Congratulations! You&apos;ve completed the tutorial. Enjoy the rest of the party!
+
+Street
+Your dad drove you to a party some friends at school invited you to. You weren&apos;t sure if you should go, but they said you&apos;ll have a lot of fun.
+ 
+You just exited the car and convinced him not to escort you to the front door of the house, as you hear him roll down the window of his car: &quot;Be careful, dear. And remember what we talked about - do not drink any alcohol and absolutely no drugs!
+Other then your dad there is no one outside and you can already hear the music coming from the light up house.
+
+You can see front door, Porch light, Pathway, Car (in which is Dad) and Potted Tree here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f3b82b0"/>
+      <child nodeId="node-0x61070fbeb7c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f3b82b0">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">(first opening front door)
+
+Hall
+As you enter the hallway, you are greeted by a friend of yours, Jasmine. She&apos;s a year older than you - a plump, dark haired girl with blue eyes. She greets you with a happy expression: &quot;You made it! To be honest, I didn&apos;t expect to see you here today. Glad you&apos;re here!&quot; The hall is a cozy room, with warm tapestry and you hear loud sounds, music from one of the other rooms.
+
+You can see front door, Stairs, mirror, Chandelier, Coat Rack, Shelve (empty), Pictures, Shoe Rack and Jasmine here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f4d3f60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f4d3f60">
+    <command xml:space="preserve">go down</command>
+    <result xml:space="preserve">(first opening Stairs)
+In the midst of all the people dancing and singing, you see a tall guy with a buzzcut - he introduces himself as &quot;Clip&quot;. He holds out his hand and reveals a small square of paper. He extends it towards you. With a grin he says: &quot;This will change your life.&quot; Your decision hangs in the balance - to take or reject?
+
+Basement
+You descend into the basement, where the thumping bass of the music becomes almost tangible, pulsating through the air. The room is alive with movement, bodies swaying to the rhythm in the dimly lit space.
+
+You can see Stairs, Couch, Boom Box, Old Rug and Clip here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f3fc370"/>
+      <child nodeId="node-0x61070f3a2670"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f3fc370">
+    <command xml:space="preserve">examine clip</command>
+    <result xml:space="preserve">A twenty year old man with a blonde buzz cut and bright green eyes. He smells of cigarettes and energy drinks. He smiles back at you as you look at him.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f3e3c10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f3e3c10">
+    <command xml:space="preserve">take blotter paper</command>
+    <result xml:space="preserve">That seems to belong to Clip.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f480060"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f480060">
+    <command xml:space="preserve">take blotter paper from clip</command>
+    <result xml:space="preserve">That seems to belong to Clip.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x61070f3a2670">
+    <command xml:space="preserve">greet clip</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f3beb80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f3beb80">
+    <command xml:space="preserve">talk to clip</command>
+    <result xml:space="preserve">Clip doesn&apos;t reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f3e9f20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f3e9f20">
+    <command xml:space="preserve">accept blotter paper</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f3f3160"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f3f3160">
+    <command xml:space="preserve">take blotter paper</command>
+    <result xml:space="preserve">You put the paper under your tongue as instructed by Clip. After a short period of time, reality warps around you, colors bleeding into one another, and the music morphing into a symphony of chaos. It&apos;s a journey into the recesses of your mind, but one fraught with peril: Colors pulsate with an overwhelming intensity, morphing into surreal shapes that dance before your disbelieving eyes. Every sound becomes a discordant chaotic noise, echoing endlessly. Paranoia grips your thoughts, the shadows seem to be attacking you from everywhere, they flicker and dance, morphing into grotesque forms that seem to mock your terror. You fall unconscious.
+
+
+
+    *** You have fallen unconscious. ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f4ce680"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f4ce680">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Basement
+[Previous turn undone.]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f3e0090"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f3e0090">
+    <command xml:space="preserve">reject blotter paper</command>
+    <result xml:space="preserve">You hang out with Clip for a while but he seems a bit zoned out after a while. It&apos;s as if he&apos;s been plunged into a nightmare. Suddenly, his eyes widen with fear making you uncomfortable. You want to stand up and leave but your mind in empathy for Clip is shouting: &quot;What is happening?!&quot; His eyes are now darting frantically around the room as if searching for escape from unseen terrors. He jumps up from the couch, jerky and erratic. What do you do, leave or help?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f3cdfa0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f3cdfa0">
+    <command xml:space="preserve">help clip</command>
+    <result xml:space="preserve">You drag Clip to the garden to get a calmer and more quiet environment for him. You sit him down on the floor and reassure him that everything is going to be fine. You try calming him down by doing some breathing exercises and bringing him a glass of water from the kitchen. It helps him a lot.
+
+Garden
+Ah. The cool night air! You open the door to the garden and see a big pool with LEDs and some people in and around it, although it is quite cold for August.
+
+You can see Clip here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x61070fbeb7c0">
+    <command xml:space="preserve">open front door</command>
+    <result xml:space="preserve">You open front door.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070fbfc410"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070fbfc410">
+    <command xml:space="preserve">enter house</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070fc40820"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070fc40820">
+    <command xml:space="preserve">enter front door</command>
+    <result xml:space="preserve">
+Hall
+As you enter the hallway, you are greeted by a friend of yours, Jasmine. She&apos;s a year older than you - a plump, dark haired girl with blue eyes. She greets you with a happy expression: &quot;You made it! To be honest, I didn&apos;t expect to see you here today. Glad you&apos;re here!&quot; The hall is a cozy room, with warm tapestry and you hear loud sounds, music from one of the other rooms.
+
+You can see front door, Stairs, mirror, Chandelier, Coat Rack, Shelve (empty), Pictures, Shoe Rack and Jasmine here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070fbb6b10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070fbb6b10">
+    <command xml:space="preserve">talk to jasmine</command>
+    <result xml:space="preserve">Jasmine: Hi! You finally showed up. I was starting to think that you&apos;re going to ditch me here like you always do.
+
+Me:  Hello to you too, and what do you mean, like I always do? This is the only time I agreed to come to one of these parties. Remember?
+
+Jasmine: Alright, alright, I&apos;m too good for the crowd, let&apos;s take your coat off and go inside.
+
+Me:  From the smell of alcohol, I can already tell I&apos;m going to like it.
+
+Jasmine: Oh, that&apos;s right. You&apos;ve never been drunk. Maybe we can change your mind tonight.
+
+Jasmine: And, by the way, you know who is here. Maybe she/he can help you loosen up tonight
+
+Me:  Can we not talk about her/him right now?
+
+Jasmine: Okay, but promise me you are going to do something about it tonight
+
+Me:  I promise! 
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f7d3330"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f7d3330">
+    <command xml:space="preserve">look into mirror</command>
+    <result xml:space="preserve">You find nothing of interest.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070fc99300"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070fc99300">
+    <command xml:space="preserve">look at pictures</command>
+    <result xml:space="preserve">A collection of family pictures lines the walls, capturing what seems to be a ski vacation of Jasmine and her family. It makes you think that she seems a lot more mature now.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070fcfb860"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070fcfb860">
+    <command xml:space="preserve">look at chandelier</command>
+    <result xml:space="preserve">A vintage chandelier hangs from the ceiling, casting a soft, warm glow over the hallway. It wiggles a bit with the beat of the music from another room.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070fd07120"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070fd07120">
+    <command xml:space="preserve">go down stairs</command>
+    <result xml:space="preserve">I only understood you as far as wanting to go down.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070fc83160"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070fc83160">
+    <command xml:space="preserve">go down</command>
+    <result xml:space="preserve">(first opening Stairs)
+
+Basement
+You descend into the basement, where the thumping bass of the music becomes almost tangible, pulsating through the air. The room is alive with movement, bodies swaying to the rhythm in the dimly lit space.
+
+You can see Stairs, Couch, Boom Box, Old Rug and Clip here.
+
+In the midst of all the people dancing and singing, you see a tall guy with a buzzcut - he introduces himself as &quot;Clip&quot;. He holds out his hand and reveals a small square of paper. He extends it towards you. With a grin he says: &quot;This will change your life.&quot; Your decision hangs in the balance - to take or reject?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070fd985f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070fd985f0">
+    <command xml:space="preserve">look at clip</command>
+    <result xml:space="preserve">A twenty year old man with a blonde buzz cut and bright green eyes. He smells of cigarettes and energy drinks. He smiles back at you as you look at him.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f700c50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f700c50">
+    <command xml:space="preserve">take </command>
+    <result xml:space="preserve">What do you want to take?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61071007b530"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61071007b530">
+    <command xml:space="preserve">take paper</command>
+    <result xml:space="preserve">You put the paper under your tongue as instructed by Clip. After a short period of time, reality warps around you, colors bleeding into one another, and the music morphing into a symphony of chaos. It&apos;s a journey into the recesses of your mind, but one fraught with peril: Colors pulsate with an overwhelming intensity, morphing into surreal shapes that dance before your disbelieving eyes. Every sound becomes a discordant chaotic noise, echoing endlessly. Paranoia grips your thoughts, the shadows seem to be attacking you from everywhere, they flicker and dance, morphing into grotesque forms that seem to mock your terror. You fall unconscious.
+
+
+
+    *** You have fallen unconscious. ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+
+&gt; </result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070fd5b8c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070fd5b8c0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Basement
+[Previous turn undone.]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070ffcbbf0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070ffcbbf0">
+    <command xml:space="preserve">reject paper</command>
+    <result xml:space="preserve">You hang out with Clip for a while but he seems a bit zoned out after a while. It&apos;s as if he&apos;s been plunged into a nightmare. Suddenly, his eyes widen with fear making you uncomfortable. You want to stand up and leave but your mind in empathy for Clip is shouting: &quot;What is happening?!&quot; His eyes are now darting frantically around the room as if searching for escape from unseen terrors. He jumps up from the couch, jerky and erratic. What do you do, leave or help?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070fdaa6e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070fdaa6e0">
+    <command xml:space="preserve">help clip</command>
+    <result xml:space="preserve">You drag Clip to the garden to get a calmer and more quiet environment for him. You sit him down on the floor and reassure him that everything is going to be fine. You try calming him down by doing some breathing exercises and bringing him a glass of water from the kitchen. It helps him a lot. He should be safe here now. You can leave him with all your friends up here.
+
+Garden
+Ah. The cool night air! You open the door to the garden and see a big pool with LEDs and some people in and around it, although it is quite cold for August.
+
+You can see Clip here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x6107100d4d60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x6107100d4d60">
+    <command xml:space="preserve">talk to clip</command>
+    <result xml:space="preserve">Clip doesn&apos;t reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x61070ffdea50">
+    <command xml:space="preserve">go home</command>
+    <result xml:space="preserve">You decide it&apos;s time to leave the party.
+As you say goodbye to your host and others, a friend comes over and asks to walk home with you. &quot;The party was a bit much, and I&apos;m glad you&apos;re strong enough to not get pressured into anything stupid,&quot; they say.
+
+
+
+    *** You walk home safely with your friend, feeling good about your choices. ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+
+&gt; </result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x61070f8bc7b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x61070f8bc7b0">
+    <command xml:space="preserve">quit</command>
+    <result xml:space="preserve">
+[ The game has finished ]
+</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+</Skein>
