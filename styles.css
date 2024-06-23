@@ -11,13 +11,23 @@ main {
     border: 2px solid #000;
     background-color: #ccc;
     padding: 20px;
-    max-width: 300px;
     margin: 0 auto;
+    /* max-width: 300px; */
+    flex: 100% !important;
     transition: max-width 0.5s ease;
 }
 
 .menu.wide {
-    max-width: 800px;
+    max-width: 800px ;
+}
+
+#help, #credits, #back {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#help:hover, #credits:hover, #back:hover {
+    transform: scale(1.05); 
 }
 
 input[type="text"],
@@ -61,6 +71,11 @@ h1 {
 @media (min-width: 768px) {
     main {
         margin-top: 150px;
+    }
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 80%;
+        max-width: 80%;
     }
 }
 
