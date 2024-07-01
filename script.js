@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function displayMenu(menuId) {
-    const menus = ['welcomeNewplayer', 'main', 'helpmenu'];
+    const menus = ['welcomeNewplayer', 'main', 'helpmenu', 'creditsmenu']; 
     menus.forEach(menu => {
         document.getElementById(menu).classList.add('d-none');
         document.getElementById(menu).querySelector('.menu').classList.remove('wide');
     });
     document.getElementById(menuId).classList.remove('d-none');
-    if (menuId === 'helpmenu') {
+    if (menuId === 'helpmenu' || menuId === 'creditsmenu') { 
         document.getElementById(menuId).querySelector('.menu').classList.add('wide');
     }
 }
