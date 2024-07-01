@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-1">
+  <generator>Windows Inform 10.1.2</generator>
+  <item nodeId="node-1">
+    <command xml:space="preserve">game</command>
+    <result xml:space="preserve">Welcome to the tutorial! Let's start by teaching you some basic commands. You can examine the area around you by typing "examine xyz". You can use "talk to *someone*" to trigger interactions, and you can type "leave party" at any time to end the game. Type "i" or "inv" at any point of the game, to see your inventory. If you want to skip the Tutorial, because you are familiar with Interactive Fiction, simply type "yes" to dive right into the story!&#x000A;&#x000A;Welcome&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 240701 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Bathroom&#x000A;The bathroom looks very clean and fresh compared to the rest of the house. There's a sink, a bathroom mirror, a cabinet, and a towel holder here. You also see your friend Anna. You can get into action and try "take towel".&#x000A;&#x000A;You can see a sink (on which is a soap bar), a bathroom mirror, a cabinet (closed), a holder (on which is a towel), a faucet and Anna here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2"/>
+      <child nodeId="node-27"/>
+    </children>
+  </item>
+  <item nodeId="node-2">
+    <command xml:space="preserve">take towel</command>
+    <result xml:space="preserve">Good job! Now, type "drop towel" to put it down.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3"/>
+    </children>
+  </item>
+  <item nodeId="node-3">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a towel&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4"/>
+    </children>
+  </item>
+  <item nodeId="node-4">
+    <command xml:space="preserve">drop towel</command>
+    <result xml:space="preserve">Great! Now, let's put it on the towel holder. Type "put towel on holder".&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5"/>
+    </children>
+  </item>
+  <item nodeId="node-5">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-6"/>
+    </children>
+  </item>
+  <item nodeId="node-6">
+    <command xml:space="preserve">put towel on holder</command>
+    <result xml:space="preserve">(first taking the towel)&#x000A;Well done! Now, let's interact with something else. Type "eat soap".&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-7"/>
+    </children>
+  </item>
+  <item nodeId="node-7">
+    <command xml:space="preserve">eat soap</command>
+    <result xml:space="preserve">That doesn't taste good, does it? Now, let's move around. Type "go northwest" to leave the bathroom.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-8"/>
+    </children>
+  </item>
+  <item nodeId="node-8">
+    <command xml:space="preserve">go northwest</command>
+    <result xml:space="preserve">You are now in the hallway. Let's go back to the bathroom by typing "go southeast".&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-9"/>
+    </children>
+  </item>
+  <item nodeId="node-9">
+    <command xml:space="preserve">go southeast</command>
+    <result xml:space="preserve">You're back in the bathroom. Type "enter cabinet".&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-10"/>
+    </children>
+  </item>
+  <item nodeId="node-10">
+    <command xml:space="preserve">enter cabinet</command>
+    <result xml:space="preserve">The cabinet is too small to enter. Let's examine the bathroom mirror. Type "examine bathroom mirror".&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-11"/>
+    </children>
+  </item>
+  <item nodeId="node-11">
+    <command xml:space="preserve">examine bathroom mirror</command>
+    <result xml:space="preserve">A large mirror reflecting the room.&#x000A;&#x000A;Nice! Now, let's open the cabinet. Type "open cabinet".&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-12"/>
+    </children>
+  </item>
+  <item nodeId="node-12">
+    <command xml:space="preserve">open cabinet</command>
+    <result xml:space="preserve">Fantastic! Now, let's switch something on. Type "switch on faucet".&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-13"/>
+    </children>
+  </item>
+  <item nodeId="node-13">
+    <command xml:space="preserve">switch on faucet</command>
+    <result xml:space="preserve">You turn the faucet on, and water starts flowing. Now, let's switch it off. Type "switch off faucet".&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-14"/>
+    </children>
+  </item>
+  <item nodeId="node-14">
+    <command xml:space="preserve">switch off faucet</command>
+    <result xml:space="preserve">You turn the faucet off, and water stops flowing. Try closing the cabinet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-15"/>
+    </children>
+  </item>
+  <item nodeId="node-15">
+    <command xml:space="preserve">close cabinet</command>
+    <result xml:space="preserve">Great! Now, let's practice giving something. Take the key from the cabinet (you have to open it again) and type "give key to Anna".&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-16"/>
+    </children>
+  </item>
+  <item nodeId="node-16">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-17"/>
+    </children>
+  </item>
+  <item nodeId="node-17">
+    <command xml:space="preserve">open cabinet</command>
+    <result xml:space="preserve">You open the cabinet, revealing a key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-18"/>
+    </children>
+  </item>
+  <item nodeId="node-18">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-19"/>
+    </children>
+  </item>
+  <item nodeId="node-19">
+    <command xml:space="preserve">give key to ana</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-20"/>
+    </children>
+  </item>
+  <item nodeId="node-20">
+    <command xml:space="preserve">giv ekey to anna</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-21"/>
+    </children>
+  </item>
+  <item nodeId="node-21">
+    <command xml:space="preserve">give key to anna</command>
+    <result xml:space="preserve">Nice work! Now, let's ask Anna for something. Type "ask Anna for towel".&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-22"/>
+    </children>
+  </item>
+  <item nodeId="node-22">
+    <command xml:space="preserve">ask anna for towel</command>
+    <result xml:space="preserve">Anna says: "Here you go!" and hands you a towel.&#x000A;&#x000A;Good job! Now, let's touch something. Type "touch sink".&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-23"/>
+    </children>
+  </item>
+  <item nodeId="node-23">
+    <command xml:space="preserve">touch sink</command>
+    <result xml:space="preserve">The sink feels cold and smooth.&#x000A;&#x000A;Great! Finally, let's say something. Type "yes".&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-24"/>
+    </children>
+  </item>
+  <item nodeId="node-24">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">Congratulations! You've completed the tutorial. Enjoy the rest of the party!&#x000A;&#x000A;Street&#x000A;Your dad drove you to a party some friends at school invited you to. You weren't sure if you should go, but they said you'll have a lot of fun.&#x000A; &#x000A;You just exited the car and convinced him not to escort you to the front door of the house, as you hear him roll down the window of his car: "Be careful, dear. And remember what we talked about - do not drink any alcohol and absolutely no drugs!&#x000A;Other then your dad there is no one outside and you can already hear the music coming from the light up house.&#x000A;&#x000A;You can see front door, Porch light, Pathway, Car (in which is Dad) and Potted Tree here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-25"/>
+    </children>
+  </item>
+  <item nodeId="node-25">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">(first opening front door)&#x000A;&#x000A;Hall&#x000A;As you enter the hallway, you are greeted by a friend of yours, Jasmine. She's a year older than you - a plump, dark haired girl with blue eyes. She greets you with a happy expression: "You made it! To be honest, I didn't expect to see you here today. Glad you're here!" The hall is a cozy room, with warm tapestry and you hear loud sounds, music from one of the other rooms.&#x000A;&#x000A;You can see front door, Stairs, mirror, Chandelier, Coat Rack, Shelve (empty), Pictures, Shoe Rack and Jasmine here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-26"/>
+    </children>
+  </item>
+  <item nodeId="node-26">
+    <command xml:space="preserve">talk to jasmine</command>
+    <result xml:space="preserve">Jasmine: Hi! You finally showed up. I was starting to think that you're going to ditch me here like you always do.&#x000A;&#x000A;Me:  Hello to you too, and what do you mean, like I always do? This is the only time I agreed to come to one of these parties. Remember?&#x000A;&#x000A;Jasmine: Alright, alright, I'm too good for the crowd, let's take your coat off and go inside.&#x000A;&#x000A;Me:  From the smell of alcohol, I can already tell I'm going to like it.&#x000A;&#x000A;Jasmine: Oh, that's right. You've never been drunk. Maybe we can change your mind tonight.&#x000A;&#x000A;Jasmine: And, by the way, you know who is here. Maybe she/he can help you loosen up tonight&#x000A;&#x000A;Me:  Can we not talk about her/him right now?&#x000A;&#x000A;Jasmine: Okay, but promise me you are going to do something about it tonight&#x000A;&#x000A;Me:  I promise! &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-27">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">Congratulations! You've completed the tutorial. Enjoy the rest of the party!&#x000A;&#x000A;Street&#x000A;Your dad drove you to a party some friends at school invited you to. You weren't sure if you should go, but they said you'll have a lot of fun.&#x000A; &#x000A;You just exited the car and convinced him not to escort you to the front door of the house, as you hear him roll down the window of his car: "Be careful, dear. And remember what we talked about - do not drink any alcohol and absolutely no drugs!&#x000A;Other then your dad there is no one outside and you can already hear the music coming from the light up house.&#x000A;&#x000A;You can see front door, Porch light, Pathway, Car (in which is Dad) and Potted Tree here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-28"/>
+    </children>
+  </item>
+  <item nodeId="node-28">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">(first opening front door)&#x000A;&#x000A;Hall&#x000A;As you enter the hallway, you are greeted by a friend of yours, Jasmine. She's a year older than you - a plump, dark haired girl with blue eyes. She greets you with a happy expression: "You made it! To be honest, I didn't expect to see you here today. Glad you're here!" The hall is a cozy room, with warm tapestry and you hear loud sounds, music from one of the other rooms.&#x000A;&#x000A;You can see front door, Stairs, mirror, Chandelier, Coat Rack, Shelve (empty), Pictures, Shoe Rack and Jasmine here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-29"/>
+    </children>
+  </item>
+  <item nodeId="node-29">
+    <command xml:space="preserve">talk to jasmine</command>
+    <result xml:space="preserve">Jasmine: Hi! You finally showed up. I was starting to think that you're going to ditch me here like you always do.&#x000A;&#x000A;Me:  Hello to you too, and what do you mean, like I always do? This is the only time I agreed to come to one of these parties. Remember?&#x000A;&#x000A;Jasmine: Alright, alright, I'm too good for the crowd, let's take your coat off and go inside.&#x000A;&#x000A;Me:  From the smell of alcohol, I can already tell I'm going to like it.&#x000A;&#x000A;Jasmine: Oh, that's right. You've never been drunk. Maybe we can change your mind tonight.&#x000A;&#x000A;Jasmine: And, by the way, you know who is here. Maybe she/he can help you loosen up tonight&#x000A;&#x000A;Me:  Can we not talk about her/him right now?&#x000A;&#x000A;Jasmine: Okay, but promise me you are going to do something about it tonight&#x000A;&#x000A;Me:  I promise! &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+</Skein>

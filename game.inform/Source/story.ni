@@ -365,7 +365,7 @@ Awake Person: Yeah, they help me cope. But sometimes, I think they’re just dra
 
 - take or reject?";
 
-Instead of rejecting:
+Instead of rejecting while player is in bedroom:
 	say "Player: Have you tried talking to someone about this? Getting help?
 
 Awake Person: I’ve thought about it. But it’s not easy admitting you have a problem, you know?
@@ -377,7 +377,7 @@ Awake Person: Maybe you’re right. Thanks for listening, I appreciate it.
 Player: Anytime. And if you ever need someone to talk to, I’m here.";
 	increase sobriety by 1;
 
-Instead of taking:
+Instead of taking while the player is in bedroom:
 	say "Player: Sure I would really like to take the edge off right about now
 
 Awake Person: Alright here ya go and enjoy. I would recommend laying down if this is your first time.
