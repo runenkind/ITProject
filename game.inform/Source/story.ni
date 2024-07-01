@@ -9,6 +9,10 @@ Check talking to: say "[The noun] doesn't reply."
 Rejecting is an action applying to one visible thing. Understand "reject [something]" or "reject [any thing]" as rejecting.
 Helping is an action applying to one visible thing. Understand "help [someone]" or "aid [someone]" as helping.
 Leaving is an action applying to one visible thing. Understand "leave [someone]" or "abandon [someone]" as leaving.
+Swimming is an action applying to one visible thing. Understand "swim in [something]" or "swim [something]" as swimming.
+Sitting is an action applying to one visible thing. Understand "sit on [something]" or "sit [someone]" as sitting.
+Taking a hit is an action applying to one visible thing. Understand "take a hit" as taking a hit.
+Investigating is an action applying to one visible thing. Understand "investigate [something]" or "investigate [someone]" or "investigating the [something]" or "investigating [something]"as investigating.
 
 [declaring rooms]
 
@@ -20,15 +24,15 @@ Hall is a room. “[if unvisited]As you enter the hallway, you are greeted by a 
 She greets you with a happy expression: ‘You made it! To be honest, I didn’t expect to see you here today. Glad you’re here!’ 
 [end if]The hall is a cozy room, with warm tapestry and you hear loud sounds, music from one of the other rooms.”
 
-Kitchen is a room. "The kitchen is messy, lots of people are here. They seem to be playing some kind of drinking game with shots."
+Kitchen is a room. "The kitchen is a lively space with a rectangular island at its center, surrounded by counters along three walls. The room is filled with the sounds of loud but tolerable music and the chatter of people taking shots and having fun. As you enter, the smell of strong alcoholic drinks fills the air. The island counters are crowded with various drinks and paper cups. Four seats are occupied by partygoers. You are offered a variety of drinks, each with different effects on your sobriety points. The kitchen is bustling with activity, and you can choose to participate or explore.[if unvisited] There is tons of booze in here this is the best place to get smashed"
 
-Living Room is a room. "The living room is the origin of the loud music you heard from across the hall. It is pretty crowded but no one seems to be dancing."
+Living Room is a room. "The living room is a cozy, inviting space where people are gathered in a circle. Some are sunken into the plush, brown leather couches, while others are sitting or lying on the floor. The room has a warm, relaxed atmosphere, enhanced by the soft lighting from a lampstand near the chimney and the soft music playing from a stereo system below the wall-mounted TV.";
 
-Bedroom is a room. "The bedroom is a very silent place, although you can still hear music  from another room."
+Bedroom is a room. “As you step into the bedroom, you find yourself in a hushed atmosphere, with several figures sprawled across beds, appearing to be asleep. Among them, one person is awake, their eyes heavy with drowsiness. They extend a small pill towards you, offering it with a faint smile. The room is dimly lit, casting shadows that dance across the walls, and the air carries a faint scent of something sweet and musky.”;
 
 Basement is a room. “You descend into the basement, where the thumping bass of the music becomes almost tangible, pulsating through the air. The room is alive with movement, bodies swaying to the rhythm in the dimly lit space.”
 
-Garden is a room. "Ah. The cool night air! You open the door to the garden and see a big pool with LEDs and some people in and around it, although it is quite cold for August."
+Garden is a room. "Ah. The cool night air! You open the door to the garden and see a big pool with LEDs and some people in and around it, although it is quite cold for August. [if unvisited]You wonder if the music is bothering the neighbors, but Jasmine probably told them it would be loud tonight"
 
 Chapter 2 - Entering the Party
 
@@ -138,6 +142,25 @@ Beer is on kitchen island. The description is "A brown bottle of beer. Hopefully
 Tequila is on kitchen island. The description is "A usual bottle of tequila with the funny sombrero cap on top."
 
 Absynth is on kitchen island. The description is "I have never tried this and it should probably stay that way. Can't imagine it tasting any good"
+
+Instead of drinking vodka:
+	say "You take a shot of vodka. It burns as it goes down and has a bad aftertaste";
+	decrease sobriety by 2;
+	
+Instead of drinking beer:
+	say "You take a bottle of beer and drink it while talking with a few people. It doesn't taste bad but there is definetly better";
+	decrease sobriety by 1;
+	
+Instead of drinking Tequila:
+	say "You take a shot of Tequila. It burns similar to vodka going down, but the aftertaste makes you kind of sick";
+	decrease sobriety by 2;
+	
+Instead of drinking Absynth:
+	say "You take a shot of Absynth. It burns alot going down and has the most bitter aftertaste you have ever experienced. This stuff is not meant for human consumption you feel like";
+	decrease sobriety by 3;
+	
+
+	
 
 [Basement stuff]
 
@@ -284,11 +307,132 @@ Instead of going to the bathroom:
 
 [Living room stuff]
 
+Bong is in living room. "A well used bong filled and ready to go. It is stained and hasn't been cleaned for some time, but that doesn't really bother anyone. You could take a hit"
+
+Lampstand is in living room. "A lamp next to the chimney, with dim light that is just enough to cover the area around the chimney. Looking closely the lamp is standing a but uneven";
+
+Bookshelf is a container in living room. "Filled almost completely with books it is certainly an impressive collection. Studying it further you notice one book sticking out way more then the others. 
+- investigate?"
+
+switch is in living room;
+
+Lighter is inside bookshelf. "A small zippo lighter"
+
+Sofa is in living room. "A large worn out leather sofa granting an inviting space to sit down and relax, which several people are already doing. Looking closely there seems to be something stuck between the cushions";
+
+
+Instead of investigating the lampstand:
+	say "You find a switch under the lamp with 0 indecation to its purpose. Who knows what flicking this could do? - investigate the switch?";
+	
+Instead of investigating the switch:
+		say "You flick the switch with anticipation and the lighting in the room changes to a mood lighting slowly fading from red to blue and then to green. It's kind of calming and changes the vibe";
+
+Instead of investigating the bookshelf:
+	say "You pull out the old book and with it falls out a lighter. Whoever put this here doesn't respect literature alot it seems";
+	now the player carries the lighter;
+
+Instead of taking a hit:
+	if the player has the lighter:
+		say "Using the lighter you found you light the bong and take a deep breath. Inhaling the smoke you have to cough a bit, as you are not used to it at all. Responding to your loud coughing you hear a 'Hell yeah!' from someone";
+		decrease sobriety by 1;
+	else:
+		say "You get ready to take a hit, but forgot that you dont have anything to light the bong with. Surely there is a lighter somewhere on here, although maybe you shouldn't take a hit anyways";
+
 [Bedroom stuff]
+
+Xanax Pill is in bedroom. The description is "A small white pill containing xanax (probably). ";
+
+Beds are in bedroom. "Several beds occupy the room, each with a figure lying upon them, seemingly lost in slumber.";
+
+TV is a device in bedroom. "A television sits in the corner of the room, its screen displaying a mundane program, with no remote in sight. You could turn it off, but it looks like some people are kind of watching it in a trance.";
+
+Awake person is a man in bedroom. "The awake person looks at you with a knowing gaze, hinting at the possibility of a private conversation.“;
+
+Instead of talking to awake person:
+	say "Awake Person: Hey, I noticed you standing there. You seem a bit lost. Care for a chat?
+
+Player: Uh, sure. What’s on your mind?
+
+Awake Person: Just life, I guess. You ever feel like you’re drowning, but everyone around you thinks you’re swimming just fine?
+
+Player: Yeah, sometimes.
+
+Awake Person: It’s tough, you know? Trying to keep it together when everything feels like it’s falling apart. That’s why I take these.
+
+Player: Those... those are xanax, right?
+
+Awake Person: Yeah, they help me cope. But sometimes, I think they’re just dragging me deeper. Do you want to try them?
+
+- take or reject?";
+
+Instead of rejecting:
+	say "Player: Have you tried talking to someone about this? Getting help?
+
+Awake Person: I’ve thought about it. But it’s not easy admitting you have a problem, you know?
+
+Player: I understand. But ignoring it won’t make it go away. You deserve to feel better.
+
+Awake Person: Maybe you’re right. Thanks for listening, I appreciate it.
+
+Player: Anytime. And if you ever need someone to talk to, I’m here.";
+	increase sobriety by 1;
+
+Instead of taking:
+	say "Player: Sure I would really like to take the edge off right about now
+
+Awake Person: Alright here ya go and enjoy. I would recommend laying down if this is your first time.
+
+You put the pill in your mouth and swallow and then lay down. After some time you start to feel like you are dreaming while still being in the room. You wake up feeling pretty mellow and having no idea how much time passed since taking the pill";
+	decrease sobriety by 2;
+
 
 [Garden stuff]
 
+pool is in garden. The description is "An average sized swimming pool, which has some cups floating in it. The water looks nice and would probably feel good to swim in, or you could just put your feet in. - to swim or to sit - you ponder";
+
+instead of swimming:
+	if sobriety is greater than 4:
+		say "The water feels nice and cool on your skin as you swim a few laps and enjoy the moment. You don't want to catch a cold though, so you go out and dry off.";
+	else if  sobriety is greater than 1:
+		say "With clouded judgemt you decide to go for a little swim and jump in. As soon as your whole body is submerged you notice that you can't pull yourself to the surface. As you struggle you can feel your vision fading and the urge to breathe getting more and more critical.";
+		if a random chance of 1 in 5 succeeds:
+			say "As your vision fades completely you imagine being pulled up into the light. Suddenly you wake up with people standing in a circle around you looking very worried. Before you can say anything you turn your head to the side and puke mostly water on the ground.
+ 
+Someone: 'Hey man you are you alright? You should stay away from the pool, when you are this out of it.'
+
+2 guy escort you into the house and go back into the garden after giving you a clap on the back. This experience has left you quite shaken";
+			now the player is in the Hall;
+			increase sobriety by 1;
+		else:
+			say "As your vision stops working you see your whole life flash before your eyes. Every regret or happy memorie you have ever experienced. What will the afterlife be? 
+you wonder...";
+			end the story saying "A sad end to an innocent life";
+	else if sobriety is less than 2:
+		end the story saying "In a drunken haze you plunge into the cool and heavy water. You know deep down, that this decision was wrong. However, it's too late to regret it now. Slowly you can feel yourself falling into a deep deep sleep.";
+
+instead of sitting:
+	say "You dip your feet into the clear pool water. It's a nice feeling and helps you relax your mind and calm down a little, after the loud inside of the house";
+
+Puking guy is a man in garden. The description is "A guy you don't know is currently puking his guts out into a bush. You could help him, as letting him stay near the pool doesn't seem like a good idea."
+
+Instead of talking to puking guy when puking guy is in the garden:
+	say "You try to talk to him, but he seems to be unable to hear anything you say as stares blankly into space (probably trying to not puke again or fall over. As you watch him you see him starting to wobble - leave or help?"
+	
+Instead of helping puking guy when puking guy is in the garden:
+	say "You put your arm under his shoulder and help him to the nearest bench where slumps into it. The only conatiner you can find is a watering can, which isn't ideal but it's better then nothing, so you hand it to him. Going into the hall you find friends of him, who go outside and keep an eye on him";
+	increase sobriety by 1;
+	now the player is in the hall;
+
+Instead of leaving puking guy when puking guy is in the garden:
+	say "He will probably fine he is just a bit drunk.
+As soon as you finish thinking that sentence he collapses into a pool of his vomit. Disgusted you leave the garden as some people head over to the poor guy";
+	decrease sobriety by 1;
+	now the player is in the hall;
+
+
 [ending]
+
+
 [actions]
 Leaving the party is an action applying to nothing. Understand "leave party" or "exit party" or "go home" as leaving the party.
 
